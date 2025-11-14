@@ -1,6 +1,6 @@
 import mongoose, { type ConnectOptions } from "mongoose";
 
-import { env } from "../config/env.js";
+import { env } from "../config/env";
 
 export const connectToDatabase = async (
   uri?: string,

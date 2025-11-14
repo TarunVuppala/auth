@@ -3,9 +3,9 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    // ESM for Node 16/18/20+ (Auto-handles extensions)
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    // CommonJS output for Node runtimes
+    "module": "CommonJS",
+    "moduleResolution": "Node",
     "target": "ES2020",
 
     // Allow Node types

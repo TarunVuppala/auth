@@ -1,9 +1,9 @@
 import express from "express";
 import { z } from "zod";
 
-import { User, type UserDocument } from "../models/User.js";
-import { signToken } from "../utils/jwt.js";
-import { authenticate } from "../middleware/auth.js";
+import { User, type UserDocument } from "../models/User";
+import { signToken } from "../utils/jwt";
+import { authenticate } from "../middleware/auth";
 
 const router = express.Router();
 

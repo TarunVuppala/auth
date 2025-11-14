@@ -2,9 +2,9 @@ import express from "express";
 import { Types } from "mongoose";
 import { z } from "zod";
 
-import { authenticate, requireRole } from "../middleware/auth.js";
-import { User, type UserDocument } from "../models/User.js";
-import { Item, type ItemDocument } from "../models/Item.js";
+import { authenticate, requireRole } from "../middleware/auth";
+import { User, type UserDocument } from "../models/User";
+import { Item, type ItemDocument } from "../models/Item";
 
 const router = express.Router();
 

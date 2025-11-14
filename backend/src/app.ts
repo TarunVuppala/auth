@@ -2,11 +2,11 @@ import cors from "cors";
 import express from "express";
 import rateLimit from "express-rate-limit";
 
-import authRouter from "./routes/auth.js";
-import itemsRouter from "./routes/items.js";
-import adminRouter from "./routes/admin.js";
-import { env } from "./config/env.js";
-import { errorHandler } from "./middleware/error-handler.js";
+import authRouter from "./routes/auth";
+import itemsRouter from "./routes/items";
+import adminRouter from "./routes/admin";
+import { env } from "./config/env";
+import { errorHandler } from "./middleware/error-handler";
 
 const app = express();
 
