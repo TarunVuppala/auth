@@ -15,6 +15,7 @@ const envSchema = z.object({
   CLIENT_ORIGIN: z
     .string()
     .url("CLIENT_ORIGIN must be a valid URL")
+    .transform((value) => value.replace(/\/+$/, ""))
     .optional(),
 });
 
