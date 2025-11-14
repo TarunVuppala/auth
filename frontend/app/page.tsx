@@ -57,7 +57,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex-1">
-        <SpotlightCard className="rounded-[32px] border border-border bg-card/80 p-10 shadow-xl">
+        <SpotlightCard className="rounded-4xl border border-border bg-card/80 p-10 shadow-xl">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
             What you get
           </p>

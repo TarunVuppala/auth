@@ -74,7 +74,7 @@ export default function SignupPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
-      <Card className="w-full max-w-md rounded-[32px] border border-border bg-card p-0 shadow-xl">
+      <Card className="w-full max-w-md rounded--4xl border border-border bg-card p-0 shadow-xl">
         <CardHeader className="space-y-4 border-b border-border p-8 pb-6">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">
             Join the platform
