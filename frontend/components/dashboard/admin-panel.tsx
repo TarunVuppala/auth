@@ -25,7 +25,7 @@ export function AdminPanel(props: AdminPanelProps) {
     <section className="mt-8 space-y-6">
       <div className="flex items-center gap-2">
         <Shield className="h-5 w-5 text-emerald-500" />
-        <p className="text-sm font-semibold uppercase tracking-[0.4em] text-[color:var(--muted-foreground)]">
+        <p className="text-sm font-semibold uppercase tracking-[0.4em] text-muted-foreground">
           Admin tools
         </p>
       </div>
@@ -67,7 +67,7 @@ const MembersCard = ({
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-lg">
-          <UserCog className="h-5 w-5 text-[color:var(--muted-foreground)]" />
+          <UserCog className="h-5 w-5 text-muted-foreground" />
           Manage members
         </CardTitle>
         <CardDescription>Update roles, search accounts, and remove users.</CardDescription>
@@ -75,7 +75,7 @@ const MembersCard = ({
       <CardContent className="space-y-5">
         <div className="flex flex-col gap-3 sm:flex-row">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               placeholder="Search by name or email"
               className="pl-9"
@@ -86,14 +86,14 @@ const MembersCard = ({
               <button
                 type="button"
                 aria-label="Clear search"
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-[color:var(--muted-foreground)] transition hover:opacity-80"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition hover:opacity-80"
                 onClick={() => onSearchTermChange("")}
               >
                 <XCircle className="h-4 w-4" />
               </button>
             )}
           </div>
-          <div className="flex items-center text-sm text-[color:var(--muted-foreground)]">
+          <div className="flex items-center text-sm text-muted-foreground">
             {loading ? "Searching..." : "Results update as you type"}
           </div>
         </div>
@@ -125,7 +125,7 @@ const MembersTable = ({
 }) => {
   if (loading) {
     return (
-      <div className="rounded-2xl border border-dashed border-[color:var(--border)] py-6 text-center text-[color:var(--muted-foreground)]">
+      <div className="rounded-2xl border border-dashed border-[color:var(--border)] py-6 text-center text-muted-foreground">
         Loading users...
       </div>
     );
@@ -145,8 +145,8 @@ const MembersTable = ({
         <TableBody>
           {users.length === 0 ? (
             <TableRow>
-              <TableCell colSpan={4} className="py-8 text-center text-[color:var(--muted-foreground)]">
-                <div className="flex flex-col items-center gap-2 text-[color:var(--muted-foreground)]">
+              <TableCell colSpan={4} className="py-8 text-center text-muted-foreground">
+                <div className="flex flex-col items-center gap-2 text-muted-foreground">
                   <UserX className="h-5 w-5" />
                   <span>No members found.</span>
                 </div>
@@ -158,7 +158,7 @@ const MembersTable = ({
                 <TableCell className="font-semibold text-[color:var(--foreground)]">
                   {user.name}
                 </TableCell>
-                <TableCell className="text-[color:var(--muted-foreground)]">
+                <TableCell className="text-muted-foreground">
                   {user.email}
                 </TableCell>
                 <TableCell>
@@ -203,7 +203,7 @@ const MembersTable = ({
 const StatCard = ({ label, value }: { label: string; value: number }) => (
   <Card className="border-none bg-[color:var(--card)] shadow">
     <CardContent className="space-y-1 p-5">
-      <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--muted-foreground)]">
+      <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
         {label}
       </p>
       <p className="text-3xl font-semibold text-[color:var(--foreground)]">{value}</p>

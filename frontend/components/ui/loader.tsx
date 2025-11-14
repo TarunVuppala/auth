@@ -12,11 +12,11 @@ interface LoaderProps {
 export const Loader = ({ label = "Loading...", className }: LoaderProps) => (
   <div
     className={cn(
-      "flex items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-[color:var(--card)]/90 px-6 py-4 text-sm font-semibold text-[color:var(--muted-foreground)] shadow-sm",
+      "flex items-center gap-3 rounded-3xl border border-[color:var(--border)] bg-[color:var(--card)]/90 px-6 py-4 text-sm font-semibold text-muted-foreground shadow-sm",
       className,
     )}
   >
-    <Loader2 className="h-4 w-4 animate-spin text-[color:var(--muted-foreground)]" />
+    <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
     {label}
   </div>
 );

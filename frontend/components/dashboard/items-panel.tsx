@@ -111,7 +111,7 @@ export function ItemsPanel({
           </div>
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
             <div className="relative flex-1 min-w-[220px]">
-              <SearchIcon className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+              <SearchIcon className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <Input
                 placeholder="Search items"
                 value={searchValue}
@@ -121,7 +121,7 @@ export function ItemsPanel({
               {searchValue.length > 0 && (
                 <button
                   type="button"
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[color:var(--muted-foreground)] transition hover:opacity-80"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground transition hover:opacity-80"
                   onClick={() => onSearchChange("")}
                   aria-label="Clear search"
                 >
@@ -179,7 +179,7 @@ export function ItemsPanel({
                   <TableRow>
                     <TableCell
                       colSpan={userRole === "admin" ? 5 : 4}
-                      className="py-10 text-center text-sm text-[color:var(--muted-foreground)]"
+                      className="py-10 text-center text-sm text-muted-foreground"
                     >
                       <div className="flex flex-col items-center gap-2">
                         <Inbox className="h-6 w-6" />
@@ -211,7 +211,7 @@ export function ItemsPanel({
                         <TableCell className="font-semibold text-[color:var(--foreground)]">
                           {item.title}
                         </TableCell>
-                        <TableCell className="text-[color:var(--muted-foreground)]">
+                        <TableCell className="text-muted-foreground">
                           {item.description || "—"}
                         </TableCell>
                         {userRole === "admin" && (
@@ -222,7 +222,7 @@ export function ItemsPanel({
                                   {item.ownerDetails.name || "Unknown"}
                                 </div>
                                 {item.ownerDetails.email && (
-                                  <p className="text-xs text-[color:var(--muted-foreground)]">
+                                  <p className="text-xs text-muted-foreground">
                                     {item.ownerDetails.email}
                                   </p>
                                 )}

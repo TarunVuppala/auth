@@ -38,7 +38,7 @@ export default function HomePage() {
         <h1 className="text-4xl font-semibold leading-tight text-[color:var(--foreground)] md:text-5xl">
           Build a role-based dashboard without the guesswork.
         </h1>
-        <p className="text-lg text-[color:var(--muted-foreground)]">
+        <p className="text-lg text-muted-foreground">
           This starter pairs JWT auth, protected pages, CRUD items, and a small admin area using
           Next.js, Express, MongoDB, and axios.
         </p>
@@ -58,7 +58,7 @@ export default function HomePage() {
       </section>
       <section className="flex-1">
         <SpotlightCard className="rounded-[32px] border border-[color:var(--border)] bg-[color:var(--card)]/80 p-10 shadow-xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[color:var(--muted-foreground)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
             What you get
           </p>
           <div className="mt-6 space-y-5">
@@ -72,7 +72,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-base font-semibold text-[color:var(--foreground)]">{title}</p>
-                  <p className="text-sm text-[color:var(--muted-foreground)]">{description}</p>
+                  <p className="text-sm text-muted-foreground">{description}</p>
                 </div>
               </div>
             ))}

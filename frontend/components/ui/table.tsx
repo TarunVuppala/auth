@@ -25,7 +25,7 @@ const TableHeader = ({
 }: React.HTMLAttributes<HTMLTableSectionElement>) => (
   <thead
     className={cn(
-      "text-xs uppercase tracking-[0.3em] text-[color:var(--muted-foreground)]",
+      "text-xs uppercase tracking-[0.3em] text-muted-foreground",
       className,
     )}
     {...props}

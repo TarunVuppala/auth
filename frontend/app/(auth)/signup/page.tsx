@@ -104,7 +104,7 @@ export default function SignupPage() {
           </div>
         </CardHeader>
         <CardContent className="space-y-6 p-8">
-          <p className="text-sm text-[color:var(--muted-foreground)]">
+          <p className="text-sm text-muted-foreground">
             Signing up as{" "}
             <span className="font-semibold text-[color:var(--foreground)]">
               {selectedRole}
@@ -115,7 +115,7 @@ export default function SignupPage() {
             <div className="space-y-2">
               <Label htmlFor="name">Full name</Label>
               <div className="relative">
-                <User className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+                <User className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input id="name" type="text" placeholder="Jane Doe" className="pl-9" {...register("name")} />
               </div>
               {errors.name && <p className="text-sm text-red-500">{errors.name.message}</p>}
@@ -124,7 +124,7 @@ export default function SignupPage() {
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <div className="relative">
-                <AtSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+                <AtSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   id="email"
                   type="email"
@@ -139,7 +139,7 @@ export default function SignupPage() {
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   id="password"
                   type="password"
@@ -162,7 +162,7 @@ export default function SignupPage() {
               {authLoading ? "Creating account..." : "Create account"}
             </Button>
           </form>
-          <p className="text-sm text-[color:var(--muted-foreground)]">
+          <p className="text-sm text-muted-foreground">
             Already part of the team?{" "}
             <Link href="/login" className="font-semibold text-[color:var(--foreground)]">
               Log in

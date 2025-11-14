@@ -19,7 +19,7 @@ export const PaginationControls = ({
   onPrevious,
   onNext,
 }: PaginationControlsProps) => (
-  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-[color:var(--muted-foreground)]">
+  <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-muted-foreground">
     <Button
       type="button"
       variant="outline"

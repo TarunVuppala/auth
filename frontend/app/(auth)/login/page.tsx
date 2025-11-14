@@ -75,7 +75,7 @@ export default function LoginPage() {
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
       <Card className="w-full max-w-md rounded-4xl border border-[color:var(--border)] bg-[color:var(--card)] p-0 shadow-xl">
         <CardHeader className="space-y-4 border-b border-[color:var(--border)] p-8 pb-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-[color:var(--muted-foreground)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
             Welcome back
           </p>
           <CardTitle className="text-3xl">Log in</CardTitle>
@@ -109,7 +109,7 @@ export default function LoginPage() {
           </div>
         </CardHeader>
         <CardContent className="space-y-6 p-8">
-          <p className="text-sm text-[color:var(--muted-foreground)]">
+          <p className="text-sm text-muted-foreground">
             Logging in as{" "}
             <span className="font-semibold text-[color:var(--foreground)]">
               {selectedRole}
@@ -119,7 +119,7 @@ export default function LoginPage() {
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <div className="relative">
-                <AtSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+                <AtSign className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   id="email"
                   type="email"
@@ -136,7 +136,7 @@ export default function LoginPage() {
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
               <div className="relative">
-                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[color:var(--muted-foreground)]" />
+                <Lock className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   id="password"
                   type="password"

@@ -40,7 +40,7 @@ const CardDescription = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLParagraphElement>) => (
-  <p className={cn("text-sm text-[color:var(--muted-foreground)]", className)} {...props} />
+  <p className={cn("text-sm text-muted-foreground", className)} {...props} />
 );
 
 const CardContent = ({
