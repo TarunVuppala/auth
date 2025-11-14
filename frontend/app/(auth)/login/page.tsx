@@ -151,7 +151,7 @@ export default function LoginPage() {
             </div>
 
             {authError && (
-              <p className="rounded-2xl bg-color-badge-destructive-bg/60 px-4 py-3 text-sm text-color-badge-destructive-foreground">
+              <p className="rounded-2xl bg-badge-destructive-bg/60 px-4 py-3 text-sm text-badge-destructive-foreground">
                 {authError}
               </p>
             )}

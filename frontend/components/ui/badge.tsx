@@ -8,12 +8,12 @@ const badgeVariants = {
   default:
     "bg-accent text-accent-foreground",
   secondary:
-    "border border-border bg-color-badge-secondary-bg text-color-badge-secondary-foreground",
+    "border border-border bg-badge-secondary-bg text-badge-secondary-foreground",
   outline: "border border-border text-foreground",
   success:
-    "border border-transparent bg-color-badge-success-bg text-color-badge-success-foreground",
+    "border border-transparent bg-badge-success-bg text-badge-success-foreground",
   destructive:
-    "border border-transparent bg-color-badge-destructive-bg text-color-badge-destructive-foreground",
+    "border border-transparent bg-badge-destructive-bg text-badge-destructive-foreground",
 };
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
