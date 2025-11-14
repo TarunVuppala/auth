@@ -22,7 +22,7 @@ export function DashboardHeader({
       : "You can create and edit your own items.";
 
   return (
-    <Card className="flex flex-col gap-6 rounded-4xl border-none bg-[color:var(--card)] p-8 shadow-xl md:flex-row md:items-center md:justify-between">
+    <Card className="flex flex-col gap-6 rounded-4xl border-none bg-card p-8 shadow-xl md:flex-row md:items-center md:justify-between">
       <div>
         <p className="text-xs uppercase tracking-[0.4em] text-muted-foreground">
           Dashboard

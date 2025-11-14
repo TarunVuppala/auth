@@ -35,7 +35,7 @@ export default function HomePage() {
         <Badge variant="secondary" className="px-4 py-2">
           Auth + dashboard kit
         </Badge>
-        <h1 className="text-4xl font-semibold leading-tight text-[color:var(--foreground)] md:text-5xl">
+        <h1 className="text-4xl font-semibold leading-tight text-foreground md:text-5xl">
           Build a role-based dashboard without the guesswork.
         </h1>
         <p className="text-lg text-muted-foreground">
@@ -57,7 +57,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="flex-1">
-        <SpotlightCard className="rounded-[32px] border border-[color:var(--border)] bg-[color:var(--card)]/80 p-10 shadow-xl">
+        <SpotlightCard className="rounded-[32px] border border-border bg-card/80 p-10 shadow-xl">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
             What you get
           </p>
@@ -65,13 +65,13 @@ export default function HomePage() {
             {features.map(({ icon: Icon, title, description }) => (
               <div
                 key={title}
-                className="flex items-start gap-4 rounded-3xl border border-transparent px-4 py-3 transition hover:border-[color:var(--border)]"
+                className="flex items-start gap-4 rounded-3xl border border-transparent px-4 py-3 transition hover:border-border"
               >
-                <div className="rounded-2xl bg-[color:var(--accent)] p-3 text-[color:var(--accent-foreground)]">
+                <div className="rounded-2xl bg-accent p-3 text-accent-foreground">
                   <Icon className="h-4 w-4" />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[color:var(--foreground)]">{title}</p>
+                  <p className="text-base font-semibold text-foreground">{title}</p>
                   <p className="text-sm text-muted-foreground">{description}</p>
                 </div>
               </div>

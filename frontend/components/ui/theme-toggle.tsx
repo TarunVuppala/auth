@@ -19,7 +19,7 @@ export function ThemeToggle() {
       type="button"
       variant="outline"
       size="icon"
-      className="relative overflow-hidden rounded-full border border-[color:var(--border)] bg-[color:var(--card)]/80 text-[color:var(--foreground)] backdrop-blur transition"
+      className="relative overflow-hidden rounded-full border border-border bg-card/80 text-foreground backdrop-blur transition"
       aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >

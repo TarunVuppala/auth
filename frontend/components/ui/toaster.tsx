@@ -8,7 +8,7 @@ export const AppToaster = () => (
     toastOptions={{
       classNames: {
         toast:
-          "rounded-2xl border border-[color:var(--border)] bg-[color:var(--card)]/95 text-[color:var(--foreground)] shadow-lg",
+          "rounded-2xl border border-border bg-card/95 text-foreground shadow-lg",
         title: "font-semibold",
         description: "text-sm text-muted-foreground",
       },

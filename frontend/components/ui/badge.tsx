@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 
 const badgeVariants = {
   default:
-    "bg-[color:var(--accent)] text-[color:var(--accent-foreground)]",
+    "bg-accent text-accent-foreground",
   secondary:
-    "border border-[color:var(--border)] bg-[color:var(--color-badge-secondary-bg)] text-[color:var(--color-badge-secondary-foreground)]",
-  outline: "border border-[color:var(--border)] text-[color:var(--foreground)]",
+    "border border-border bg-color-badge-secondary-bg text-color-badge-secondary-foreground",
+  outline: "border border-border text-foreground",
   success:
-    "border border-transparent bg-[color:var(--color-badge-success-bg)] text-[color:var(--color-badge-success-foreground)]",
+    "border border-transparent bg-color-badge-success-bg text-color-badge-success-foreground",
   destructive:
-    "border border-transparent bg-[color:var(--color-badge-destructive-bg)] text-[color:var(--color-badge-destructive-foreground)]",
+    "border border-transparent bg-color-badge-destructive-bg text-color-badge-destructive-foreground",
 };
 
 export interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {

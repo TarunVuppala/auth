@@ -165,7 +165,7 @@ export function ItemsPanel({
                       checked={allSelected && currentPageIds.length > 0}
                       onChange={onToggleSelectAll}
                       disabled={currentPageIds.length === 0}
-                      className="size-4 rounded border-[color:var(--border)] bg-[color:var(--card)]"
+                      className="size-4 rounded border-border bg-card"
                     />
                   </TableHead>
                   <TableHead>Title</TableHead>
@@ -195,9 +195,9 @@ export function ItemsPanel({
                       <TableRow
                         key={item.id}
                         className={clsx(
-                          "border-b border-[color:var(--border)]/70 text-sm text-[color:var(--foreground)] last:border-none",
+                          "border-b border-border/70 text-sm text-foreground last:border-none",
                           isRowEditing && "border-emerald-200 bg-emerald-50/70",
-                          !isRowEditing && isSelected && "bg-[color:var(--card)]/60",
+                          !isRowEditing && isSelected && "bg-card/60",
                         )}
                       >
                         <TableCell className="w-10">
@@ -205,10 +205,10 @@ export function ItemsPanel({
                             type="checkbox"
                             checked={isSelected}
                             onChange={() => onToggleSelect(item.id)}
-                            className="size-4 rounded border-[color:var(--border)] bg-[color:var(--card)]"
+                            className="size-4 rounded border-border bg-card"
                           />
                         </TableCell>
-                        <TableCell className="font-semibold text-[color:var(--foreground)]">
+                        <TableCell className="font-semibold text-foreground">
                           {item.title}
                         </TableCell>
                         <TableCell className="text-muted-foreground">
@@ -218,7 +218,7 @@ export function ItemsPanel({
                           <TableCell>
                             {item.ownerDetails ? (
                               <div className="space-y-1">
-                                <div className="font-medium text-[color:var(--foreground)]">
+                                <div className="font-medium text-foreground">
                                   {item.ownerDetails.name || "Unknown"}
                                 </div>
                                 {item.ownerDetails.email && (

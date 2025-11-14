@@ -74,8 +74,8 @@ export default function SignupPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
-      <Card className="w-full max-w-md rounded-[32px] border border-[color:var(--border)] bg-[color:var(--card)] p-0 shadow-xl">
-        <CardHeader className="space-y-4 border-b border-[color:var(--border)] p-8 pb-6">
+      <Card className="w-full max-w-md rounded-[32px] border border-border bg-card p-0 shadow-xl">
+        <CardHeader className="space-y-4 border-b border-border p-8 pb-6">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-emerald-500">
             Join the platform
           </p>
@@ -106,7 +106,7 @@ export default function SignupPage() {
         <CardContent className="space-y-6 p-8">
           <p className="text-sm text-muted-foreground">
             Signing up as{" "}
-            <span className="font-semibold text-[color:var(--foreground)]">
+            <span className="font-semibold text-foreground">
               {selectedRole}
             </span>
           </p>
@@ -152,7 +152,7 @@ export default function SignupPage() {
             </div>
 
             {authError && (
-              <p className="rounded-2xl bg-[color:var(--color-badge-destructive-bg)]/60 px-4 py-3 text-sm text-[color:var(--color-badge-destructive-foreground)]">
+              <p className="rounded-2xl bg-color-badge-destructive-bg/60 px-4 py-3 text-sm text-color-badge-destructive-foreground">
                 {authError}
               </p>
             )}
@@ -164,7 +164,7 @@ export default function SignupPage() {
           </form>
           <p className="text-sm text-muted-foreground">
             Already part of the team?{" "}
-            <Link href="/login" className="font-semibold text-[color:var(--foreground)]">
+            <Link href="/login" className="font-semibold text-foreground">
               Log in
             </Link>
           </p>

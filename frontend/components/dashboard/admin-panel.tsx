@@ -125,7 +125,7 @@ const MembersTable = ({
 }) => {
   if (loading) {
     return (
-      <div className="rounded-2xl border border-dashed border-[color:var(--border)] py-6 text-center text-muted-foreground">
+      <div className="rounded-2xl border border-dashed border-border py-6 text-center text-muted-foreground">
         Loading users...
       </div>
     );
@@ -155,7 +155,7 @@ const MembersTable = ({
           ) : (
             users.map((user) => (
               <TableRow key={user.id}>
-                <TableCell className="font-semibold text-[color:var(--foreground)]">
+                <TableCell className="font-semibold text-foreground">
                   {user.name}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
@@ -201,12 +201,12 @@ const MembersTable = ({
 };
 
 const StatCard = ({ label, value }: { label: string; value: number }) => (
-  <Card className="border-none bg-[color:var(--card)] shadow">
+  <Card className="border-none bg-card shadow">
     <CardContent className="space-y-1 p-5">
       <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
         {label}
       </p>
-      <p className="text-3xl font-semibold text-[color:var(--foreground)]">{value}</p>
+      <p className="text-3xl font-semibold text-foreground">{value}</p>
     </CardContent>
   </Card>
 );

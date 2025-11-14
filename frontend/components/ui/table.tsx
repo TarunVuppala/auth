@@ -11,7 +11,7 @@ const Table = React.forwardRef<
   <table
     ref={ref}
     className={cn(
-      "w-full caption-bottom text-sm text-[color:var(--foreground)]/80",
+      "w-full caption-bottom text-sm text-foreground/80",
       className,
     )}
     {...props}
@@ -45,7 +45,7 @@ const TableRow = ({
 }: React.HTMLAttributes<HTMLTableRowElement>) => (
   <tr
     className={cn(
-      "border-b border-[color:var(--border)]/70 text-sm last:border-none",
+      "border-b border-border/70 text-sm last:border-none",
       className,
     )}
     {...props}
@@ -57,7 +57,7 @@ const TableHead = ({
   ...props
 }: React.ThHTMLAttributes<HTMLTableCellElement>) => (
   <th
-    className={cn("py-3 text-left font-medium text-[color:var(--foreground)]", className)}
+    className={cn("py-3 text-left font-medium text-foreground", className)}
     {...props}
   />
 );
@@ -66,7 +66,7 @@ const TableCell = ({
   className,
   ...props
 }: React.TdHTMLAttributes<HTMLTableCellElement>) => (
-  <td className={cn("py-4 align-top text-[color:var(--foreground)]", className)} {...props} />
+  <td className={cn("py-4 align-top text-foreground", className)} {...props} />
 );
 
 export { Table, TableHeader, TableBody, TableRow, TableHead, TableCell };

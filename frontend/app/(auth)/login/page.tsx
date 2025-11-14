@@ -73,15 +73,15 @@ export default function LoginPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-12">
-      <Card className="w-full max-w-md rounded-4xl border border-[color:var(--border)] bg-[color:var(--card)] p-0 shadow-xl">
-        <CardHeader className="space-y-4 border-b border-[color:var(--border)] p-8 pb-6">
+      <Card className="w-full max-w-md rounded-4xl border border-border bg-card p-0 shadow-xl">
+        <CardHeader className="space-y-4 border-b border-border p-8 pb-6">
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
             Welcome back
           </p>
           <CardTitle className="text-3xl">Log in</CardTitle>
           <CardDescription>
             Access your workspace dashboard. Need an account?{" "}
-            <Link href="/signup" className="font-semibold text-[color:var(--foreground)]">
+            <Link href="/signup" className="font-semibold text-foreground">
               Sign up here.
             </Link>
           </CardDescription>
@@ -111,7 +111,7 @@ export default function LoginPage() {
         <CardContent className="space-y-6 p-8">
           <p className="text-sm text-muted-foreground">
             Logging in as{" "}
-            <span className="font-semibold text-[color:var(--foreground)]">
+            <span className="font-semibold text-foreground">
               {selectedRole}
             </span>
           </p>
@@ -151,7 +151,7 @@ export default function LoginPage() {
             </div>
 
             {authError && (
-              <p className="rounded-2xl bg-[color:var(--color-badge-destructive-bg)]/60 px-4 py-3 text-sm text-[color:var(--color-badge-destructive-foreground)]">
+              <p className="rounded-2xl bg-color-badge-destructive-bg/60 px-4 py-3 text-sm text-color-badge-destructive-foreground">
                 {authError}
               </p>
             )}
